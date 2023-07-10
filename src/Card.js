@@ -5,8 +5,8 @@ export default function Card(){
     <div className="Card">
         <div className="row">
           <div className="col-md-3 col-lg-4 background-image">
-            <image source="../public/images/bg-card-front"></image>
-            
+            <img source="./../public/images/bg-card-front.png" className="card-front" alt="card-front"></img>
+
           </div>
           <div className="col-md-6 col-lg-8 justify-content-center align-items-center">
             <form className="row g-3">

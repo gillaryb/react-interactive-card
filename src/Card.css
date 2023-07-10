@@ -3,3 +3,8 @@
   width:400px;
   height:100vh;
 }
+
+.Card .card-front{
+  width: 150px;
+  height: 150px
+}
