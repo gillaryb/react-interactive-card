@@ -5,8 +5,22 @@ export default function Card(){
     <div className="Card">
         <div className="row">
           <div className="col-lg-8 background-image">
-            <div className="card-front">
-              
+            <div className="card-front d-flex">
+              <div className="card-front-infos text-white">
+                <div className="card-circle d-flex align-items-center">
+                  <div className="card-circle-up">
+                  </div>
+                  <div className="card-open-circle">
+                  </div>
+                </div>
+                <div className="card-number">
+                 <h2>49591 6489 6389 101E</h2>
+                </div>
+                <div className="card-name d-flex justify-content-between">
+                <p>FELICIA LEIRE</p>
+                <p>9/00</p>
+                </div>
+              </div>
             </div>
 
           </div>

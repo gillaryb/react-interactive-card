@@ -4,6 +4,29 @@
   height:100vh;
 }
 
+.card-front-infos{
+  padding: 20px;
+}
+
+.card-circle{
+  margin-bottom: 50px;
+}
+
+.card-circle-up{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FFFF;
+}
+
+.card-open-circle{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFF;
+  border-radius: 50px;
+  margin-left:16px;
+}
+
 .Card .card-front{
   background-image:url("images/bg-card-front.png");
   width: 400px;
