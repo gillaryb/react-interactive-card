@@ -1,10 +1,24 @@
 .Card .background-image{
-  background-image: url("../public/images/bg-main-desktop.png");
+  background-image: url("images/bg-main-desktop.png");
   width:400px;
   height:100vh;
 }
 
 .Card .card-front{
-  width: 150px;
-  height: 150px
+  background-image:url("images/bg-card-front.png");
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 70px;
+  top: 140px;
+  border-radius: 8px;
+}
+
+
+
+.card-form{
+  padding: 8px;
+  position: absolute;
+  bottom: 230px;
+  right: 90px;
 }

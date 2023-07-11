@@ -4,12 +4,14 @@ export default function Card(){
   return (
     <div className="Card">
         <div className="row">
-          <div className="col-md-3 col-lg-4 background-image">
-            <img source="./../public/images/bg-card-front.png" className="card-front" alt="card-front"></img>
+          <div className="col-lg-8 background-image">
+            <div className="card-front">
+              
+            </div>
 
           </div>
-          <div className="col-md-6 col-lg-8 justify-content-center align-items-center">
-            <form className="row g-3">
+          <div className="col-md-3 col-lg-4 container align-items-center card-form">
+            <form className="row g-3 align-items-center">
               <div className="col-12">
                 <label for="inputName" className="form-label">CARD HOLDER NAME</label>
                 <input type="text" className="form-control" id="inputName" placeholder="John Doe"></input>
