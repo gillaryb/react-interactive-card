@@ -1,3 +1,7 @@
+.Card{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .Card .background-image{
   background-image: url("images/bg-main-desktop.png");
   width:400px;
@@ -9,7 +13,7 @@
 }
 
 .card-circle{
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .card-circle-up{
@@ -29,14 +33,22 @@
 
 .Card .card-front{
   background-image:url("images/bg-card-front.png");
-  width: 400px;
-  height: 200px;
+  width: 447px;
+  height: 245px;
   position: absolute;
   left: 70px;
-  top: 140px;
+  top: 84px;
   border-radius: 8px;
 }
 
+.card-back{
+  background-image:url("images/bg-card-back.png");
+  width: 447px;
+  height: 245px;
+  position: absolute;
+  bottom: 80px;
+  left: 155px;
+}
 
 
 .card-form{

@@ -1,11 +1,16 @@
 import React from 'react';
 import './Card.css';
 export default function Card(){
+
+  
+
+
+
   return (
     <div className="Card">
         <div className="row">
           <div className="col-lg-8 background-image">
-            <div className="card-front d-flex">
+            <div className="card-front d-flex flex-grow">
               <div className="card-front-infos text-white">
                 <div className="card-circle d-flex align-items-center">
                   <div className="card-circle-up">
@@ -22,10 +27,11 @@ export default function Card(){
                 </div>
               </div>
             </div>
-
+            <div className="card-back">
+            </div>
           </div>
-          <div className="col-md-3 col-lg-4 container align-items-center card-form">
-            <form className="row g-3 align-items-center">
+          <div className="col-md-3 col-lg-4 card-form">
+            <form className="row g-3">
               <div className="col-12">
                 <label for="inputName" className="form-label">CARD HOLDER NAME</label>
                 <input type="text" className="form-control" id="inputName" placeholder="John Doe"></input>
