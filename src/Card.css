@@ -1,5 +1,6 @@
 .Card{
   font-family: 'Space Grotesk', sans-serif;
+  height: 100vh;
 }
 
 /* .Card .background-image{
@@ -29,29 +30,68 @@
   border: 1px solid #FFFF;
   border-radius: 50px;
   margin-left:16px;
-}
+} */
 
-.Card .card-front{
+ .card-front{
   background-image:url("images/bg-card-front.png");
-  width: 447px;
-  height: 245px;
-  position: absolute;
-  left: 70px;
-  top: 84px;
+  width: 320px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
   border-radius: 8px;
+  background-repeat: no-repeat;
 }
 
-.card-back{
+ .card-back{
   background-image:url("images/bg-card-back.png");
-  width: 447px;
-  height: 245px;
-  position: absolute;
-  bottom: 80px;
-  left: 155px;
-}
+  width: 320px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+ }
+
+ .card-spacing{
+  letter-spacing: 2px;
+ }
+
+ .card-number{
+  font-size: 22px;
+ }
+
+ .card-details p{
+  margin: 0;
+ }
+
+ .card-cvc{
+  top: 86px;
+  right: 22px;
+ }
+
+ @media(min-width: 1024px){
+  .card-front, .card-back {
+    width: 480px;
+    height: 280px;
+    border-radius: 18px;
+  }
+
+  .card-number{
+    font-size: 32px;
+    margin-bottom: 22px;
+  }
+
+  .card-cvc{
+    top: 123px;
+    right: 43px;
+    font-size: 18px;
+   }
+ }
 
 
-.card-form{
+
+
+/* .card-form{
   padding: 8px;
   position: absolute;
   bottom: 230px;

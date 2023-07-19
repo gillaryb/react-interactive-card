@@ -2,27 +2,33 @@ import React from 'react';
 import './Card.css';
 import mobileBg from './images/bg-main-mobile.png';
 import desktopBg from './images/bg-main-desktop.png';
-import cardFront from './images/bg-card-front.png';
-import cardBack from './images/bg-card-back.png';
+import cardLogo from './images/card-logo.svg';
 
 export default function Card(){
   return (
     <div className="Card">
-      <div>
+      <div className="position-absolute">
         <picture>
-          <source media="(min-width: 1024px)" srcSet={desktopBg}/>
+          <source media="(min-width: 1024px)" srcSet={desktopBg} />
           <img src={mobileBg} alt="background"/>
         </picture>
       </div>
 
 
       <div className="row">
-        <div className="col-lg-8">
-          <article>
-            Front end card
+        <div className="col-lg-8 z-3 text-white mx-5 my-5 card-spacing">
+          <article className="card-front p-4 d-flex flex-column justify-content-between">
+            <img src={cardLogo}  alt="logo" className="w-25"/>
+            <div>
+              <h2 className="card-number">3240 1233 6543 2342</h2>
+              <div className="d-flex justify-content-between card-details">
+                <p>GILARY BACNIS</p>
+                <p>07/24</p>
+              </div>
+            </div>
           </article>
-          <article>
-            Back end card
+          <article className="card-back position-relative mx-5 my-5">
+            <p className="position-absolute card-cvc">312</p>
           </article>
         </div>
         <div className="col-lg-4">
@@ -32,6 +38,7 @@ export default function Card(){
         </div>
       </div>
     </div>
+
     // <div className="Card">
     //     <div className="row">
     //       <div className="col-lg-8 background-image">
