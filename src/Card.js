@@ -15,21 +15,23 @@ export default function Card(){
       </div>
 
 
-      <div className="row">
-        <div className="col-lg-8 z-3 text-white mx-5 my-5 card-spacing">
-          <article className="card-front p-4 d-flex flex-column justify-content-between">
-            <img src={cardLogo}  alt="logo" className="w-25"/>
-            <div>
-              <h2 className="card-number">3240 1233 6543 2342</h2>
-              <div className="d-flex justify-content-between card-details">
-                <p>GILARY BACNIS</p>
-                <p>07/24</p>
+      <div className="row ">
+        <div className="col-lg-8 z-3">
+          <div className="text-white mx-5 my-5 card-spacing ">
+            <article className="card-front p-4 d-flex flex-column justify-content-between">
+              <img src={cardLogo}  alt="logo" className="w-25"/>
+              <div>
+                <h2 className="card-number">3240 1233 6543 2342</h2>
+                <div className="d-flex justify-content-between card-details">
+                  <p>GILARY BACNIS</p>
+                  <p>07/24</p>
+                </div>
               </div>
-            </div>
-          </article>
-          <article className="card-back position-relative mx-5 my-5">
-            <p className="position-absolute card-cvc">312</p>
-          </article>
+            </article>
+            <article className="card-back position-relative mx-5 my-5">
+              <p className="position-absolute card-cvc">312</p>
+            </article>
+          </div>
         </div>
         <div className="col-lg-4">
           <form>
