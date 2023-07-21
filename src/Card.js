@@ -16,8 +16,8 @@ export default function Card(){
 
 
       <div className="row ">
-        <div className="col-lg-8 z-3">
-          <div className="text-white mx-5 my-5 card-spacing ">
+        <div className="col-lg-6 col-md-6 col-sm-3 z-3">
+          <div className="text-white mx-5 my-5 card-spacing">
             <article className="card-front p-4 d-flex flex-column justify-content-between">
               <img src={cardLogo}  alt="logo" className="w-25"/>
               <div>
@@ -33,9 +33,46 @@ export default function Card(){
             </article>
           </div>
         </div>
-        <div className="col-lg-4">
-          <form>
-              <h2>form</h2>
+        <div className="col-lg-6 col-md-6 col-sm-3">
+          <form className="row">
+            <div className="col-12 mb-4">
+              <label for="inputName" className="form-label">CARD HOLDER NAME</label>
+              <input type="text"
+              className="form-control opacity-25"
+              id="inputName"
+              placeholder="e.g John Doe"></input>
+            </div>
+            <div className="col-12 mb-4">
+              <label for="inputCardNumber" className="form-label">CARD NUMBER</label>
+              <input
+              type="text"
+              className="form-control opacity-25 active-input"
+              id="inputCardNumber"
+              max-length="19"
+              placeholder="eg. 3245 3235 2342 5322">
+              </input>
+            </div>
+            <div className="col-md-6 mb-4">
+              <label for="inputExyDate" className="form-label">EXP. DATE (MM/YY)</label>
+              <input
+               type="month"
+               className="form-control opacity-25"
+               id="inputExyDate"
+               >
+               </input>
+            </div>
+            <div className="col-md-6">
+              <label for="inputCVC" className="form-label">CVC</label>
+              <input
+              type="text"
+              className="form-control"
+              id="inputCVC"
+              max-length="3">
+              </input>
+            </div>
+            <div className="col-12">
+              <button type="submit" className="btn btn-primary w-100">Confirm</button>
+            </div>
           </form>
         </div>
       </div>
@@ -66,29 +103,29 @@ export default function Card(){
     //       </div>
     //       <div className="col-md-3 col-lg-4 card-form">
     //         <form className="row g-3">
-    //           <div className="col-12">
-    //             <label for="inputName" className="form-label">CARD HOLDER NAME</label>
-    //             <input type="text" className="form-control" id="inputName" placeholder="John Doe"></input>
-    //           </div>
-    //           <div className="col-12">
-    //             <label for="inputCardNumber" className="form-label">CARD NUMBER</label>
-    //             <input type="text" className="form-control" id="inputCardNumber" max-length="16"></input>
-    //           </div>
-    //           <div className="col-md-3">
-    //             <label for="inputExyDate" className="form-label">EXP. DATE</label>
-    //             <input type="text" className="form-control" id="inputExyDate" placeholder="MM"></input>
-    //           </div>
-    //           <div className="col-md-3">
-    //             <label for="inputExyDate" className="form-label">(MM/YY)</label>
-    //             <input type="text" className="form-control" id="inputExyDate" placeholder="YY"></input>
-    //           </div>
-    //           <div className="col-md-6">
-    //             <label for="inputCVC" className="form-label">CVC</label>
-    //             <input type="text" className="form-control" id="inputCVC"></input>
-    //           </div>
-    //           <div className="col-12">
-    //             <button type="submit" className="btn btn-primary w-100">Confirm</button>
-    //           </div>
+              // <div className="col-12">
+              //   <label for="inputName" className="form-label">CARD HOLDER NAME</label>
+              //   <input type="text" className="form-control" id="inputName" placeholder="John Doe"></input>
+              // </div>
+              // <div className="col-12">
+              //   <label for="inputCardNumber" className="form-label">CARD NUMBER</label>
+              //   <input type="text" className="form-control" id="inputCardNumber" max-length="16"></input>
+              // </div>
+              // <div className="col-md-3">
+              //   <label for="inputExyDate" className="form-label">EXP. DATE</label>
+              //   <input type="text" className="form-control" id="inputExyDate" placeholder="MM"></input>
+              // </div>
+              // <div className="col-md-3">
+              //   <label for="inputExyDate" className="form-label">(MM/YY)</label>
+              //   <input type="text" className="form-control" id="inputExyDate" placeholder="YY"></input>
+              // </div>
+              // <div className="col-md-6">
+              //   <label for="inputCVC" className="form-label">CVC</label>
+              //   <input type="text" className="form-control" id="inputCVC"></input>
+              // </div>
+              // <div className="col-12">
+              //   <button type="submit" className="btn btn-primary w-100">Confirm</button>
+              // </div>
     //         </form>
     //       </div>
     //     </div>
