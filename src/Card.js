@@ -38,7 +38,7 @@ export default function Card(){
             <div className="col-12 mb-4">
               <label for="inputName" className="form-label">CARD HOLDER NAME</label>
               <input type="text"
-              className="form-control opacity-25"
+              className="form-control active-input"
               id="inputName"
               placeholder="e.g John Doe"></input>
             </div>
@@ -46,7 +46,7 @@ export default function Card(){
               <label for="inputCardNumber" className="form-label">CARD NUMBER</label>
               <input
               type="text"
-              className="form-control opacity-25 active-input"
+              className="form-control active-input"
               id="inputCardNumber"
               max-length="19"
               placeholder="eg. 3245 3235 2342 5322">
@@ -56,7 +56,7 @@ export default function Card(){
               <label for="inputExyDate" className="form-label">EXP. DATE (MM/YY)</label>
               <input
                type="month"
-               className="form-control opacity-25"
+               className="form-control active-input"
                id="inputExyDate"
                >
                </input>
@@ -65,7 +65,7 @@ export default function Card(){
               <label for="inputCVC" className="form-label">CVC</label>
               <input
               type="text"
-              className="form-control"
+              className="form-control active-input"
               id="inputCVC"
               max-length="3">
               </input>
