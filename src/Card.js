@@ -40,7 +40,9 @@ export default function Card(){
               <input type="text"
               className="form-control active-input"
               id="inputName"
-              placeholder="e.g John Doe"></input>
+              placeholder="e.g John Doe"
+              required >
+              </input>
             </div>
             <div className="col-12 mb-4">
               <label for="inputCardNumber" className="form-label">CARD NUMBER</label>
@@ -49,7 +51,8 @@ export default function Card(){
               className="form-control active-input"
               id="inputCardNumber"
               max-length="19"
-              placeholder="eg. 3245 3235 2342 5322">
+              placeholder="eg. 3245 3235 2342 5322"
+              required >
               </input>
             </div>
             <div className="col-md-6 mb-4">
@@ -58,6 +61,8 @@ export default function Card(){
                type="month"
                className="form-control active-input"
                id="inputExyDate"
+               placeholder="MM YY"
+               required
                >
                </input>
             </div>
@@ -67,7 +72,9 @@ export default function Card(){
               type="text"
               className="form-control active-input"
               id="inputCVC"
-              max-length="3">
+              max-length="3"
+              placeholder="123"
+              required >
               </input>
             </div>
             <div className="col-12">
