@@ -34,7 +34,7 @@
 
  .card-front{
   background-image:url("images/bg-card-front.png");
-  width: 320px;
+  width: 300px;
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -44,7 +44,7 @@
 
  .card-back{
   background-image:url("images/bg-card-back.png");
-  width: 320px;
+  width: 300px;
   height: 200px;
   background-size: cover;
   background-position: center;
