@@ -33,9 +33,9 @@ export default function Card(){
             </article>
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-3">
-          <form className="row">
-            <div className="col-12 mb-4">
+        <div className="col-lg-6 col-md-6 col-sm-3  d-flex align-items-center ">
+          <form className="row mw-100">
+            <div className="col-12 mb-3">
               <label for="inputName" className="form-label">CARD HOLDER NAME</label>
               <input type="text"
               className="form-control active-input"
@@ -44,7 +44,7 @@ export default function Card(){
               required >
               </input>
             </div>
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-3">
               <label for="inputCardNumber" className="form-label">CARD NUMBER</label>
               <input
               type="text"
@@ -55,7 +55,7 @@ export default function Card(){
               required >
               </input>
             </div>
-            <div className="col-md-6 mb-4">
+            <div className="col-md-6 ">
               <label for="inputExyDate" className="form-label">EXP. DATE (MM/YY)</label>
               <input
                type="month"
@@ -66,7 +66,7 @@ export default function Card(){
                >
                </input>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mb-4">
               <label for="inputCVC" className="form-label">CVC</label>
               <input
               type="text"
@@ -77,7 +77,7 @@ export default function Card(){
               required >
               </input>
             </div>
-            <div className="col-12">
+            <div className="col-12 ">
               <button type="submit" className="btn btn-primary w-100">Confirm</button>
             </div>
           </form>
@@ -108,7 +108,7 @@ export default function Card(){
     //         <div className="card-back">
     //         </div>
     //       </div>
-    //       <div className="col-md-3 col-lg-4 card-form">
+    //       <div className="col-md-3 col-lg-3 card-form">
     //         <form className="row g-3">
               // <div className="col-12">
               //   <label for="inputName" className="form-label">CARD HOLDER NAME</label>
