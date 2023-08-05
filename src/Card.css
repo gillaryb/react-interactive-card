@@ -69,9 +69,20 @@
   right: 22px;
  }
 
-.active-input{
+
+ .card-btn{
+  background-color: rgba(33,9,27);
+  border: 1px solid #21092F;
+ }
+
+ .card-btn:hover{
+  background-color: rgba(33,9,27);
+  border: 1px solid #21092F;
+ }
+ 
+/* .active-input{
   border: 1px solid rgba(151, 76, 194);
-}
+} */
 
  @media(min-width: 1024px){
   .card-front, .card-back {
