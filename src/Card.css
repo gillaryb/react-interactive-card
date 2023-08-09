@@ -79,12 +79,39 @@
   background-color: rgba(33,9,27);
   border: 1px solid #21092F;
  }
- 
+
+ .active-input:required:invalid {
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+/* Style valid inputs */
+.active-input:valid {
+  border: 1px solid hsl(249, 99%, 64%)
+}
+
+/* Style invalid inputs */
+.active-input:invalid {
+  border: 1px solid red;
+}
+
+/* Style input on focus */
+.active-input:focus {
+  outline: none;
+  border-color: hsl(249, 99%, 64%);
+  box-shadow: 0 0 4px hsl(249, 99%, 64%);
+}
+
+
+
 /* .active-input{
   border: 1px solid rgba(151, 76, 194);
 } */
 
  @media(min-width: 1024px){
+  form{
+    width:400px
+  }
+
   .card-front, .card-back {
     width: 480px;
     height: 280px;

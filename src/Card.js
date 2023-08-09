@@ -23,7 +23,7 @@ export default function Card(){
 
 
       <div className="row ">
-        <div className="col-lg-7 col-md-6 col-sm-3 z-3">
+        <div className="col-lg-6 col-md-6 col-sm-3 z-3">
           <div className="text-white mx-5 my-5 card-spacing">
             <article className="card-front p-4 d-flex flex-column justify-content-between">
               <img src={cardLogo}  alt="logo" className="w-25"/>
@@ -40,7 +40,7 @@ export default function Card(){
             </article>
           </div>
         </div>
-        <div className="col-lg-5 col-md-6 col-sm-3  d-flex flex-column justify-content-center align-items-center">
+        <div className="col-lg-6 col-md-6 col-sm-3  d-flex flex-column justify-content-center align-items-center">
           {!confirmed &&(
           <form className="row mw-100">
             <div className="col-12 mb-3">
@@ -64,6 +64,7 @@ export default function Card(){
               placeholder="eg. 3245 3235 2342 5322"
                 value={cardNumber.replace(/\s/g, "").replace(/(\d{4})/g, "$1 ").trim()}
               onChange={(e) => setCardNumber(e.target.value)}
+              pattern="\d{4} \d{4} \d{4} \d{4}"
               required >
               </input>
             </div>
@@ -90,6 +91,7 @@ export default function Card(){
               placeholder="123"
               value={cvc}
               onChange={(e) => setCvc(e.target.value)}
+              pattern="\d{3}"
               required >
               </input>
             </div>
